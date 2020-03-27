@@ -1,26 +1,26 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+
+import './global.css';
+
+import Routes from './routes';
 
 function App() {
+  
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-         Hello World
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Routes />
   );
 }
 
 export default App;
+
+/**
+ * Um componente no react é uma função que retorna Html
+ * 
+ * JSX quando o html esta integrado dentro do JavaScript
+ * 
+ * Propriedades são atributos passados para componentes ao invex de elementos html
+ * 
+ * Estado informação que vai ser mantida pelo componente
+ * 
+ * Imutabilidade por uma questão de perfomace nunca podemos manipular uma variavel do estado de uma forma direta precisamos sobrepor
+ */
